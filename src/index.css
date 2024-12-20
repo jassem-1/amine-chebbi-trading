@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+.neon-border {
+  box-shadow: 0 0 10px #71F0FF, 0 0 15px #71F0FF;
+}
+
+* {
+  scroll-behavior: smooth
+}
+.background-conic{
+  background: rgb(244,233,209);
+  background: linear-gradient(90deg, rgba(244,233,209,0.5466561624649859) 0%, rgba(204,138,63,0.5046393557422969) 94%, rgba(238,209,153,0.48783263305322133) 100%);
+} 
+@layer base {
+  body {
+    @apply font-sans bg-white text-n-1 text-base;
+  }
+}
+
+.rotate-45 {
+  @apply rotate-[45deg]
+}
+
+.rotate-90 {
+  @apply rotate-[90deg]
+}
+
+.rotate-135 {
+  @apply rotate-[135deg]
+}
+
+.rotate-180 {
+  @apply rotate-[180deg]
+}
+
+.rotate-225 {
+  @apply rotate-[225deg]
+}
+
+.rotate-270 {
+  @apply rotate-[270deg]
+}
+
+.rotate-315 {
+  @apply rotate-[315deg]
+}
+
+.rotate-360 {
+  @apply rotate-[360deg]
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg]
+}
+  .cta {
+	background: linear-gradient(rgba(46, 46, 46, 0.3),rgba(101, 99, 99, 0.3)),url("https://t3.ftcdn.net/jpg/05/81/80/40/360_F_581804049_01fHtlIAN04qALcsakH6Nf1EKbPjSkBA.jpg") fixed center center;
+  }
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Adjust the page position after hiding the banner */
+
+/* Customize the dropdown menu */
+.goog-te-menu-frame {
+  border: none !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Style the language dropdown */
+.goog-te-menu2 {
+  background-color: #f5f5f5 !important; /* Change dropdown background color */
+  border-radius: 8px !important; /* Add rounded corners */
+  border: 1px solid #ccc !important; /* Add border */
+}
+
+/* Style the dropdown items */
+.goog-te-menu2-item {
+  font-family: "Arial", sans-serif !important;
+  font-size: 14px !important;
+  color: #333 !important; /* Change text color */
+  padding: 10px !important;
+  text-align: left !important;
+}
+
+/* Add hover effect to dropdown items */
+.goog-te-menu2-item:hover {
+  background-color: #e0e0e0 !important;
+  color: #000 !important; /* Change text color on hover */
+}
+
+/* Style the selected language */
+.goog-te-menu2-item-selected {
+  background-color: #4caf50 !important; /* Highlight selected language */
+  color: black !important;
+}
+
+/* Style the Google Translate logo (optional) */
+.goog-te-gadget-icon {
+  display: none !important; /* Hide the Google logo */
+}
+
+/* Customize the widget text */
+.goog-te-gadget-simple {
+  background-color: #f5f5f5 !important; /* Widget background */
+  color: #333 !important; /* Widget text color */
+  border: 1px solid #ccc !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+  font-family: "Arial", sans-serif !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+}
+
+/* Add hover effect for the widget */
+.goog-te-gadget-simple:hover {
+  background-color: #e0e0e0 !important;
+}
+.goog-te-gadget-simple img {
+display: none !important ;}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
