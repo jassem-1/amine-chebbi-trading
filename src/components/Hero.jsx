@@ -32,9 +32,9 @@ const Hero = () => {
           </div>
         <div className="relative z-1 w-full mx-auto pt-6 text-center mb-[2.875rem] md:mb-10 lg:mb-[2.25rem]">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl mb-6 text-black flex flex-col items-center">
-          {t("hero.title")}
-            <span className="inline-block relative">
-            {t("hero.level")}
+          Achieve trading excellence with 
+                     <span className="inline-block relative">
+                     every move
               <img
                 src={curve}
                 className="absolute top-full left-0 xl:-mt-2"

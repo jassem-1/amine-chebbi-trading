@@ -8,6 +8,7 @@ import Roadmap from "./components/Roadmap";
 /* import Services from "./components/Services";
  */import Services from './components/service';
 import Faqs from './components/Pricing';
+import Widgets from "./components/Widgets";
 
 const App = () => {
   return (
@@ -18,9 +19,11 @@ const App = () => {
         <Services />
         <Collaboration />
         <Contact />
-{/*         <Services />
- */}        <Faqs />
+        <Widgets />
+
+       <Faqs />
         <Roadmap />
+
         <Footer />
       </div>
 

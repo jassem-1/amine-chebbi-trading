@@ -1,3 +1,4 @@
+import AskQuestionForm from "../AskQuestioni";
 import JoinForm from "./Form";
 
 const Contact = () => {
@@ -14,7 +15,13 @@ const Contact = () => {
         <div>
           <JoinForm groupType="forex" />
         </div>
+       
       </div>
+      <div className="w-full pt-4 flex justify-center items-center flex-col mt-16 border-t-2  border-gray-300">
+      <h2 className="text-black text-xl w-1/3 text-center">You can submit your question and receive the answer directly in your email.</h2>
+<AskQuestionForm />
+
+        </div>
     </div>
   );
 };
