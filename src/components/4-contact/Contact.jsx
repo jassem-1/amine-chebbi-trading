@@ -1,5 +1,5 @@
 import AskQuestionForm from "../AskQuestioni";
-import JoinForm from "./Form";
+import GroupCard from "../GroupCard";
 
 const Contact = () => {
   return (
@@ -7,14 +7,14 @@ const Contact = () => {
       <h1 className="text-2xl text-black font-bold mb-8">Join Our Groups</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Form for Crypto Group */}
-        <div>
-          <JoinForm groupType="crypto" />
-        </div>
+        <a href="/forex-group">
+        <GroupCard groupName="Forex" />
+        </a>
 
         {/* Form for Forex Group */}
-        <div>
-          <JoinForm groupType="forex" />
-        </div>
+        <a href="/crypto-group">
+        <GroupCard groupName="Crypto" />
+        </a>
        
       </div>
       <div className="w-full pt-4 flex justify-center items-center flex-col mt-16 border-t-2  border-gray-300">

@@ -75,7 +75,7 @@ const Header = () => {
       </div>
 
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-6 pt-2 pb-2 ">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8" href="/">
           <img src={chebbi} width={50} height={30} alt="Brainwave" />
         </a>
 

@@ -9,6 +9,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from "./AuthContext.jsx";
 import Login from './components/Login';
 import "./i18n"; // Import the i18n configuration file
+import CryptoPage from "./components/crypto/CryptoPage.jsx";
+import ForexPage from "./components/forex/ForexPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <AdminDashboard />
               </ProtectedRoute>} /> {/* New Route */}
        
+              <Route path="/crypto-group" element={<CryptoPage />} />
+              <Route path="/forex-group" element={<ForexPage />} />
 
 
 

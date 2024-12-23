@@ -1,0 +1,76 @@
+
+.group-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .group-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #6b6bff, #30f0e1);
+    background-size: 400% 400%;
+    animation: gradient-move 4s infinite;
+    border-radius: 14px;
+  }
+  
+  .group-card::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    z-index: -1;
+    background: white;
+    border-radius: 12px;
+  }
+  
+  .card-content {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    line-height: 3rem;
+  }
+  
+
+  @keyframes gradient-move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .colorful-text {
+    background: radial-gradient(
+      circle at 100%,
+      #b2a8fd,
+      #5847da 50%,
+      #99a7de 75%,
+      #9a8dfd 75%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 1.5s linear infinite;
+  }
+  
+  @keyframes animatedTextGradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
